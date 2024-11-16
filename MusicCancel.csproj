@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <!-- Edit this!-->
-    <ModName>Mod_ExampleMod</ModName>
+    <ModName>Mod_MusicCancelMod</ModName>
 
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>$(ModName)</AssemblyName>
@@ -18,7 +18,7 @@
     <OutputType>Library</OutputType>
     <!-- Base paths -->
     <!-- You should modify the Directory.Build.props.template -> Directory.Build.props and put a custom path there if needed. -->
-    <GamePath Condition="'$(GamePath)' == '' AND '$(OS)' == 'Windows_NT'">C:\Program Files (x86)\Steam\steamapps\common\Elin</GamePath>
+    <GamePath Condition="'$(GamePath)' == '' AND '$(OS)' == 'Windows_NT'">D:\Steam\steamapps\common\Elin</GamePath>
     <GamePath Condition="'$(GamePath)' == '' AND '$(OS)' != 'Windows_NT'">/home/$(USERNAME)/.steam/steam/steamapps/common/Elin</GamePath>
     
     <!-- derived paths -->
